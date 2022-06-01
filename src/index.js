@@ -1,14 +1,13 @@
 import React from "react";
 import ReactDom from "react-dom";
 
+const name = "Pritam";
+const currentYear = new Date().getFullYear();
+
 ReactDom.render(
   <div>
-    <h1>My Favourite foods</h1>
-    <ul>
-      <li>Bacon</li>
-      <li>Jamon</li>
-      <li>Noodles</li>
-    </ul>
+    <p> Created by {name} </p>
+    <p> Copyright {currentYear} </p>
   </div>,
   document.getElementById("root")
 );
